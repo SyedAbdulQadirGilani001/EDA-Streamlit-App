@@ -2,13 +2,12 @@ import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import seaborn as sns # visualization
 import streamlit as st # web app framework
-from pandas_profiling import ProfileReport # EDA library
 from ydata_profiling import ProfileReport # ydata EDA library
 from streamlit_pandas_profiling import st_profile_report # EDA library
 # title
 st.markdown(''' 
 # **The EDA App** 
-This is the **EDA App** created in Streamlit using the **pandas-profiling** library. 
+This is the **EDA App** created in Streamlit using the **ydata** and **streamlit-pandas-profiling** libraries. 
 ''') 
 # file upload
 with st.sidebar.header('1. Upload data in CSV format'): # sidebar
